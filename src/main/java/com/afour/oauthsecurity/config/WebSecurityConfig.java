@@ -6,6 +6,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
 import org.springframework.security.web.access.channel.ChannelProcessingFilter;
 
 import com.afour.oauthsecurity.filter.CORSFilter;
@@ -19,6 +20,7 @@ import com.afour.oauthsecurity.filter.CORSFilter;
  */
 @Configuration
 @EnableWebSecurity
+@EnableOAuth2Client
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	/**
